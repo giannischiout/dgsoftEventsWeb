@@ -41,6 +41,7 @@ const handleFetch = async () => {
 
 function showdata(res) {
   console.log('inner data')
+  let guestDiv = document.querySelector('.event-add-guests')
   let guestInput = document.querySelector('.guest-input');
   let addBtn = document.querySelector('.guest-btn-add');
   let removeBtn = document.querySelector('.guest-btn-remove');
@@ -71,16 +72,18 @@ function showdata(res) {
   }
 
 
-  let count = 0;
+  if (checkboxDiv.checked === true) {
+    console.log('inside')
+    guestDiv.classList.remove('hide')
+  }
 
+  let count = 0;
   addBtn.addEventListener('click', () => {
     ++count
-
     guestInput.innerHTML = count;
     totalCost += parseInt(res[0].guestCost)
     priceInput.innerHTML = totalCost;
   })
-
 
   removeBtn.addEventListener('click', () => {
     if (count !== 0) {
