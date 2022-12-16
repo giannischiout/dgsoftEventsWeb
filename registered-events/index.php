@@ -13,43 +13,48 @@
 <body>
   <section id="registered-events">
       <button id="join-event"> join new event</button>  
-      <div class="registered-container">
-        <!-- EVENT TOP -->
-        <div class="event-header event-header-shadow">
-            <div class="event-time">
-              <i class="fa-regular fa-clock"></i>
-              <p>21-01-2022 05:35</p>
+      <div class="events-wrapper">
+          <div class="event-single-wrapper">
+            <!-- EVENT TOP -->
+            <div class="event-header event-header-shadow">
+                <div class="event-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>21-01-2022 05:35</p>
+                </div>
+                <i class="fa-solid fa-arrow-down"></i>
             </div>
-            <i class="fa-solid fa-arrow-down"></i>
-        </div>
-        <!-- EVENT BOTTOM -->
-        <div class="event-body">
-            <div class="event-body-row">
-                <p>Comments:</p>
-                <p>some random comment</p>
+            <!-- EVENT BOTTOM -->
+            <div class="event-body">
+                <div class="event-body-row">
+                    <p>Comments:</p>
+                    <p>some random comment</p>
+                </div>
+                <div class="event-body-row">
+                  <p>Location:</p>
+                  <p>some random location</p>
+                </div>
+                <div class="flex-row">
+                  <div class="guest-left-item">
+                    <p>Guests:</p>
+                    <div class="change-guests">
+                      <p>5</p>
+                    </div>
+                   
+                  </div>
+                  <div>
+                    <button  class="btn edit-button">edit</button>
+                    <button class="btn save-button">save</button>
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <span>Total Cost:</span>
+                  <div class="price-div">
+                    <span class="total-cost">100</span>
+                    <span class="euro">€</span>
+                  </div>
+                </div>
             </div>
-            <div class="event-body-row">
-              <p>Location:</p>
-              <p>some random location</p>
-            </div>
-            <div class="flex-row">
-              <div class="guest-left-item">
-                <p>Guests:</p>
-                <p>5</p>
-              </div>
-              <div>
-                <button  class="btn edit-button">edit</button>
-                <button class="btn save-button">save</button>
-              </div>
-            </div>
-            <div class="flex-row">
-              <span>Total Cost:</span>
-              <div class="price-div">
-                <span class="total-cost">100</span>
-                <span class="euro">€</span>
-              </div>
-            </div>
-        </div>
+      </div>
       </div>
   </section>
   

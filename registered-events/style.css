@@ -7,8 +7,16 @@
   width: 100%;
 }
 
-.registered-container {
+.events-wrapper {
   width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-single-wrapper {
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -83,6 +91,20 @@
   margin-top: 5px;
 }
 
+.gps-location {
+  margin-top: 100px;
+}
+
+.gps-location:link {
+  color: rgb(85,26,139);
+}
+
+.gps-location:visited {
+  color: rgb(52, 7, 94);
+}
+
+
+
 .flex-row {
   display: flex;
   padding: 10px;
@@ -105,7 +127,7 @@
   padding: 5px 20px;
 }
 
-.flex-row .edit-button {
+.edit-button {
   background-color: rgba(128, 128, 128, 0.531);
 }
 
@@ -137,3 +159,31 @@
   margin-left: 2px;
 }
 
+.mathBtn {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  color: white;
+  /* border: none; */
+  /* border: 1px solid var(--input-border) */
+  display: none;
+}
+
+.show-mathBtn {
+  display: block;
+}
+
+.change-guests {
+  display: flex;
+}
+
+.guestNumber {
+  width: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .events-wrapper {
+    width: 80%;
+  }
+}
