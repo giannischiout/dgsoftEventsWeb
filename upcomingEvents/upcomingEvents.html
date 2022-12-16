@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="upcomingstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/822a5ec123.js" crossorigin="anonymous"></script>
+
+  <title>Upcoming Events</title>
+</head>
+<body>
+  <section class="nav-section">
+    <nav class="main-nav">
+        <h1>BNI <span class="eventsTagline">Events</span></h1>
+    </nav>
+  </section>
+    <section class="container">
+        <div class="event-container">
+          <div class="event-title">
+            <h1 class="header--divider">Join Event</h1>
+          </div>
+          <div class="event-body">
+            <select id="select-event" class="box form-select form-select-lg w-100" aria-label=".form-select-lg example" required>
+              <option >Choose Event</option>
+            </select>
+            <div class=" box event-checkbox-div hide">
+              <label for="participate-checkbox ">Check to Participate to Event</label>
+              <input type="checkbox" name="participate-checkbox" id="participate-checkbox" value="">
+            </div>
+            <div id="guest-box" class="box event-add-guests hide">
+                <button class="guest-btn guest-btn-add">+</button>
+                <span class="guest-input">0</span>
+                <button class="guest-btn guest-btn-remove">-</button>
+                <span class="guest-text">add guests</span>
+                <span id="guest-cost" class="guest-text"></span>
+            </div>
+          </div>
+          <div class="event-price">
+            <span>Total Price:</span>
+            <span class="price-input"></span>
+            <span>€</span>
+          </div>
+          <div class="submit-div">
+            <button class="submit-event-btn disabled-btn" disabled >Submit</button>
+          </div>
+        </div>
+    </section>
+    <script src="./upcoming.js"></script>
+</body>
+</html>
